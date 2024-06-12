@@ -1,8 +1,46 @@
-# React + Vite
+# Web Application with User Authentication and CRUD Operations
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Setup
 
-Currently, two official plugins are available:
+### Frontend
+1. Navigate to the frontend directory:
+    ```bash
+    cd asmt
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Start the React app:
+    ```bash
+    npm start
+    ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Backend
+1. Navigate to the backend directory:
+    ```bash
+    cd backend
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Set up environment variables in a `.env` file:
+    ```
+    MONGO_URI=your_mongo_connection_string
+    JWT_SECRET=your_jwt_secret_key
+    ```
+4. Start the server:
+    ```bash
+    node server.js
+    ```
+
+## Overview
+
+This web application includes user authentication (registration and login) and CRUD operations on a list of items. Users can add, update, and delete items, as well as filter and sort the displayed items.
+
+## Assumptions
+
+- The application assumes a single category per item.
+- No pagination is implemented for the item list.
+- Basic error handling is implemented for demonstration purposes.
